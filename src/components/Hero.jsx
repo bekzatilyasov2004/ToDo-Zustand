@@ -114,6 +114,7 @@ const Hero = () => {
                         alignItems="center"
                         onDoubleClick={() => handleDoubleClick(task)}
                         bg={selectedTasks.some((t) => t.title === task.title) ? 'black' : 'transparent'}
+                        color={selectedTasks.some((t) => t.title === task.title) ? 'white' : ''}
                     >
                         <Flex alignItems={'center'} justifyContent={'space-around'} gap={2}>
                             <Checkbox
